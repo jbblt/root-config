@@ -1,4 +1,4 @@
-<single-spa-router>
+<!--<single-spa-router>-->
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -17,12 +17,35 @@
 
   -->
 
-  <main>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
-    <route path="react">
-      <application name="@jbblt/react-mfe"></application>
-    </route>
-  </main>
-</single-spa-router>
+      <single-spa-router>
+        <div class="main-content">
+          <nav>
+           <ul>
+             <li><a href="/angular">Go to ANGULAR MFE</a></li>
+             <li><a href="/react">Go to REACT MFE</a></li>
+           </ul>
+
+          </nav>
+          <route path="angular">
+            <application name="@jbblt/angular-mfe"></application>
+          </route>
+          <route path="react">
+            <application name="@jbblt/react-mfe"></application>
+          </route>
+        </div>
+     </single-spa-router>
+
+<!--  <main>-->
+<!--    <route default>-->
+<!--      <h1>Root App deal with base Router</h1>-->
+<!--      <nav>-->
+<!--      </nav>-->
+<!--    </route>-->
+<!--    <route path="react">-->
+<!--      <application name="@jbblt/react-mfe"></application>-->
+<!--    </route>-->
+<!--    <route path="angular">-->
+<!--      <application name="@jbblt/angular-mfe"></application>-->
+<!--    </route>-->
+<!--  </main>-->
+<!--</single-spa-router>-->
