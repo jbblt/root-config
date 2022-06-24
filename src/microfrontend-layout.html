@@ -23,15 +23,21 @@
            <ul>
              <li><a href="/angular">Go to ANGULAR MFE</a></li>
              <li><a href="/react">Go to REACT MFE</a></li>
+             <li><a href="/both-app">Both</a></li>
            </ul>
 
           </nav>
           <route path="angular">
             <application name="@jbblt/angular-mfe"></application>
+              <application name="@jbblt/react-mfe"></application>
           </route>
           <route path="react">
             <application name="@jbblt/react-mfe"></application>
           </route>
+            <route path="both-app">
+
+                <application name="@jbblt/angular-mfe"></application>
+            </route>
         </div>
      </single-spa-router>
 
